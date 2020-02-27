@@ -19,7 +19,7 @@ namespace BlogPlatform.Models
         public DbSet<PostTag> PostsTaqs { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            var connectionString = "Server=(localdb)\\mssqllocaldb;Database=MyPostDb;Trusted_Connection=True;";
+            var connectionString = "Server=(localdb)\\mssqllocaldb;Database=OurPostDb;Trusted_Connection=True;";
             optionsBuilder.UseSqlServer(connectionString)
                           .UseLazyLoadingProxies();
             base.OnConfiguring(optionsBuilder);
@@ -32,8 +32,8 @@ namespace BlogPlatform.Models
                 new Post()
                 {
                     Id = 1,
-                    Title = "Man",
-                    Author = "Yellow",
+                    Title = "BMW",
+                    Author = "Jason",
                     Description = "the best",
                     PublishDate = date,
                     CategoryId = 1,
@@ -41,19 +41,19 @@ namespace BlogPlatform.Models
                new Post()
                {
                    Id = 2,
-                   Title = "Car",
+                   Title = "Travel",
                    Author = "Ali",
                    PublishDate = date,
-                   Description = "the best",
+                   Description = "Fun travel spot",
                    CategoryId = 2,
                },
                 new Post()
                 {
                     Id = 3,
                     Title = "Travel",
-                    Author = "Justin",
+                    Author = "Ghassan",
                     PublishDate = date,
-                    Description = "the best",
+                    Description = "I like to travel here",
                     CategoryId = 2,
                 }
                 );
@@ -81,7 +81,7 @@ namespace BlogPlatform.Models
               new Tag()
               {
                   Id = 1,
-                  Name = "ali"
+                  Name = "Jason"
               },
              new Tag()
              {
@@ -91,19 +91,19 @@ namespace BlogPlatform.Models
              new Tag()
              {
                  Id = 3,
-                 Name = "ali"
+                 Name = "Ghassan"
              }
               );
             modelBuilder.Entity<Category>().HasData(
                 new Category()
                 {
                     Id = 1,
-                    Name = "Advanture",
+                    Name = "Cars",
                 },
                   new Category()
                   {
                       Id = 2,
-                      Name = "Cars"
+                      Name = "Travel"
                   },
                 new Category()
                 {
