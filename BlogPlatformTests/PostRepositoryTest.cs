@@ -1,4 +1,5 @@
-﻿using BlogPlatform.Repository;
+﻿using BlogPlatform.Models;
+using BlogPlatform.Repository;
 using System;
 using System.Collections.Generic;
 using System.Text;
