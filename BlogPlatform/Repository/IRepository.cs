@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace BlogPlatform.Repository
 {
-    interface IRepository<T> where T : class
+  public  interface IRepository<T> where T : class
     {
         IEnumerable<T> GetAll();
         IEnumerable Find(int id);
         T GetById(int id);
-        void Add(T product);
-        void Update(T product);
+        void Add(T item);
+        void Update(T item);
         void Delete(int id);
         void Save();
     }
