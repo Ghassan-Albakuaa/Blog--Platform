@@ -5,12 +5,12 @@ using System.Linq;
 using System.Threading.Tasks;
 namespace BlogPlatform.Models
 {
-    public class PostDbContext : DbContext
+    public class PostContext : DbContext
     {
-        public PostDbContext()
+        public PostContext()
         {
         }
-        public PostDbContext(DbContextOptions<PostDbContext> options) : base(options)
+        public PostContext(DbContextOptions<PostContext> options) : base(options)
         {
         }
         public DbSet<Tag> Tags { get; set; }
