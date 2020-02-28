@@ -5,12 +5,13 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-namespace BlogPlatform.Repositories
+
+namespace BlogPlatform
 {
-    public class CategoryDBRpository : IRepository<Category>
+    public class CategoryRepository : IRepository<Category>
     {
         PostContext db;
-        public CategoryDBRpository(PostContext _db)
+        public CategoryRepository(PostContext _db)
         {
             db = _db;
         }

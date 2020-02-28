@@ -11,28 +11,27 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
-namespace cle_spring_2020_courses
+namespace BlogPlatform
 {
     public class Startup
     {
         // This method gets called by the runtime. Use this method to add services to the container.
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
-
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
         }
-
         public IConfiguration Configuration { get; }
-
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
             services.AddDbContext<PostContext>();
-            services.AddScoped<IRepository<Post>, PostRepository>();
             services.AddScoped<IRepository<Category>, CategoryRepository>();
+            services.AddScoped<IRepository<Tag>, TagRepository>();
+            services.AddScoped<IRepository<Post>, PostRepository>();
+            //   services.AddScoped<IPostTag<PostTag>, PostTagRepository>();
+            // services.AddScoped<IRepository<PostTag>, GenericRepository>();
         }
-
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
@@ -40,18 +39,16 @@ namespace cle_spring_2020_courses
             {
                 app.UseDeveloperExceptionPage();
             }
-
             app.UseStaticFiles();
-
             app.UseRouting();
-
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Course}/{action=Index}/{id?}");
+            pattern: "{controller=Category}/{action=Index}/{id?}");
                 endpoints.MapRazorPages();
             });
         }
     }
+
 }
