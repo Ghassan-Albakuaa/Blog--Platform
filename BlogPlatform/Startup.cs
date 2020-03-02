@@ -45,7 +45,7 @@ namespace BlogPlatform
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-            pattern: "{controller=Category}/{action=Index}/{id?}");
+            pattern: "{controller=Home}/{action=Index}/{id?}");
                 endpoints.MapRazorPages();
             });
         }

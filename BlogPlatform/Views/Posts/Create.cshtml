@@ -13,11 +13,6 @@
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
-                <label asp-for="Id" class="control-label"></label>
-                <input asp-for="Id" class="form-control" />
-                <span asp-validation-for="Id" class="text-danger"></span>
-            </div>
-            <div class="form-group">
                 <label asp-for="Title" class="control-label"></label>
                 <input asp-for="Title" class="form-control" />
                 <span asp-validation-for="Title" class="text-danger"></span>
@@ -38,9 +33,30 @@
                 <span asp-validation-for="PublishDate" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="CategoryId" type="hidden" class="control-label"></label>
-                <input asp-for="CategoryId" class="form-control" />
-                <span asp-validation-for="CategoryId" class="text-danger"></span>
+                @*<label asp-for="CategoryId" class="control-label"></label>*@
+
+                <label asp-for="Category" class="control-label"></label>
+                <select name="CategoryId">
+                    <option value="1">Cars </option>
+                    <option value="2">Travel</option>
+                    <option value="3">Flowers</option>
+
+                </select> <span asp-validation-for="CategoryId" class="text-danger"></span>
+
+                @*<select asp-for="CategoryId" class="form-control" asp-items="ViewBag.CategoryId"></select>*@
+            </div>
+            <div class="form-group">
+                @*<label asp-for="CategoryId" class="control-label"></label>*@
+
+                @*<label asp-for="fff" class="control-label"></label>*@
+                @*<select name="TagId">
+                    <option value="1">Jason </option>
+                    <option value="2">Ghassan</option>
+                    <option value="3">Jen</option>
+                    <option value="4">Andy</option>
+                </select> <span asp-validation-for="Tag.Id" class="text-danger"></span>*@
+
+                @*<select asp-for="CategoryId" class="form-control" asp-items="ViewBag.CategoryId"></select>*@
             </div>
             <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-primary" />
