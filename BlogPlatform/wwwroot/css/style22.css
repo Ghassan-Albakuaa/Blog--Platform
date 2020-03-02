@@ -1,0 +1,679 @@
+
+
+
+
+
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+   
+}
+html{
+    font-size: 14px;
+}
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #3cf784;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #09099d;
+  border-radius: 10px;
+}
+
+body{
+    
+    font-family: "Lato",sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7;
+    color: $color-grey-dark;
+    padding: 30px;
+     box-sizing: border-box;
+}
+@keyframes moveheader2{
+    
+     70% {
+       background-image:linear-gradient(to right bottom,rgb(ee0, 114, 255,0.9),#1e4d8e), url(../img/gh6.jpg);
+    }
+  
+    80% {
+       background-image:linear-gradient(to right bottom,rgb(000, fff, 255,0.9),#000), url(../img/gh6.jpg);
+    }
+    
+     90% {
+       background-image:linear-gradient(to right bottom,rgb(a00, f0f, 055,0.9),#1e4d8e), url(../img/gh6.jpg);
+    }
+    
+    100% {
+        opacity: 1;
+    transform:translate(0);
+    }
+    
+}
+
+@keyframes moveheader{
+    
+     70% {
+       background-image:linear-gradient(to right bottom,rgb(ee0, 114, 255,0.5),#1e4d8e), url(https://media.giphy.com/media/xECun4ULC98Uo/giphy.gif);
+    }
+  
+    80% {
+       background-image:linear-gradient(to right bottom,rgb(000, fff, 255,0.5),#000), url(https://media.giphy.com/media/xECun4ULC98Uo/giphy.gif);
+    }
+    
+     90% {
+       background-image:linear-gradient(to right bottom,rgb(a00, f0f, 055,0.5),#1e4d8e), url(../img/gh6.jpg);
+    }
+    
+    100% {
+        opacity: 1;
+    transform:translate(0);
+    }
+    
+}
+
+.header3{
+    height: 95vh;
+    background-image:linear-gradient(to right bottom,rgb(EEE, 000, 055,3),#1e4d8e), url(https://media.giphy.com/media/xECun4ULC98Uo/giphy.gif);
+    animation: moveheader .0s ease-out 0s;
+    animation-fill-mode: backwards;
+    
+    animation-duration: 0s;
+    animation-delay: 0s;
+    animation-iteration-count: 0;
+    
+    background-size:cover;
+    background-position: top;   
+    position: relative;
+    
+   
+    }
+}
+
+.header{
+    height: 55vh;
+    background-image:linear-gradient(to right bottom,rgb(000, 114, 255,0.3),#1e4d8e), url(https://media.giphy.com/media/xECun4ULC98Uo/giphy.gif);
+    animation: moveheader .0s ease-out 0s;
+    animation-fill-mode: backwards;
+    
+    animation-duration: 0s;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    
+    background-size:cover;
+    background-position: top;   
+    position: relative;
+    
+    
+}
+.header2 {
+    height: 55vh;
+    background-image: linear-gradient(to right bottom,rgb(080, 014, 255,0.3),#1e4d8e), url(../images/gh6.jpg);
+    animation: moveheader .0s ease-out 0s;
+    animation-fill-mode: backwards;
+    animation-duration: 0s;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    clip-path: polygon(0 0%,98% 0,100% 75vh,0 100%);
+}
+
+
+
+
+
+.text-box
+{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+
+.heading-primary{
+    color: #fff;
+    text-transform: uppercase;
+    backface-visibility:hidden;
+    margin-bottom: 30px;
+}
+
+.header-primary-main2{
+    color:#3cf784; 
+     font-size: 45px;
+   animation-name: moveInRight;
+    animation-duration: 1s;
+    animation-delay: 2s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+   color:#3cf784; 
+    
+    
+    
+}
+    
+    
+    
+    
+}
+
+}
+.header-primary-main{
+    display: block;
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 25px;
+     color:#f4f5f2;
+    animation-name: moveInLeft;
+    animation-duration: 1s;
+    animation-delay: 2;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+    
+}
+
+.header-primary-sub{
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 20.4px;
+
+    animation-name: moveInRight;
+    animation-duration: 1s;
+    animation-delay: 2s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+    color:#fbfdf9;
+}
+
+.header-primary-sub2{
+    
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+    color:#f5f7f3;
+    letter-spacing: 30.2px;
+    animation-name: moveInLeft;
+    animation-duration: 1s;
+    animation-delay: 2s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+}
+
+@keyframes moveInLeft{
+    0% {
+        opacity: 0;
+        transform:translate(0) rotate(0deg);
+    }
+    
+    60% {
+   
+        transform: rotate(0deg);
+    }
+    
+    80%{
+         transform:translate(20px);
+    }
+    
+    100% {
+        opacity: 1;
+    transform:translate(0);
+    }
+    
+}
+
+
+@keyframes moveInRight{
+    0% {
+        opacity: 0;
+        transform:translate(100px);
+    }
+    
+    80%{
+         transform:translate(-20px);
+    }
+    
+    100% {
+        opacity: 1;
+    transform:translate(0);
+    }
+    
+}
+
+@keyframes moveInBoton{
+    0% {
+        opacity: 0;
+        transform:translateY(150px);
+    }
+    
+  
+    
+    100% {
+        opacity: 1;
+    transform:translate(0);
+    }
+    
+}
+.btn:link ,
+.btn:visited{
+        text-transform: uppercase;
+        text-decoration: none;
+    padding: 15px 40px;
+    display: inline-block;
+    border-radius: 100px;
+    transition: all .1s;
+    position: relative;
+    font-size: 1rem;
+    color: #1550d4;
+    }    
+
+.btn-white{
+    color: #e9ecf7;
+   border: .5px solid #1749d1; 
+    background-color: #000;
+    height: 50px;
+    
+     background-image: url("https://i.gifer.com/J4o.gif" ) ;
+    background-size: 150px 100px;
+    opacity: 0.6;
+
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 70px 170px rgba($color-lightgreen,.2);
+     color: #3cf784;
+   
+    
+    
+    
+    
+}
+.btn:active{
+    transform: translateY(-1px);
+      box-shadow: 0 70px 170px rgba(0,0,0,.2);
+}
+
+.btn::after{
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left:0;
+    z-index: -1;
+    transition: all .6s;
+}
+.btn-white::after{
+    background-color: #fff;
+}
+.btn:hover::after{
+    transform: scaleX(1.4)scaleY(1.6);
+    opacity: 0;
+}
+
+
+@keyframes movebotton{
+    0% {
+        opacity: 0;
+        transform:translateY(-100);
+    }
+    
+    80%{
+         transform:translateY(20);
+    }
+    
+    100% {
+        opacity: 1;
+    transform:translateY(0);
+    }
+}
+    
+
+
+
+
+
+.btn-animated {
+    animation: moveInBoton .2s ease-out 2s;
+    animation-fill-mode: backwards;
+    
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-iteration-count: 1;
+}
+
+
+.footer-nav li,
+.social-links li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer-nav li:last-child,
+.social-links li:last-child {
+    margin-right: 0;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited, 
+.social-links li a:link,
+.social-links li a:visited {
+    text-decoration: none;
+    border: 0;
+    color: #aaa;
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s;
+}
+
+/*.footer-nav li a:hover,
+.footer-nav li a:active {
+    color: #ddd;
+}
+*/
+.social-links li a:link,
+.social-links li a:visited {
+    font-size: 160%;
+}
+
+.ion-social-facebook,
+.ion-social-twitter,
+.ion-social-googleplus,
+.ion-social-instagram {
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s;
+}
+
+.ion-social-facebook:hover {
+    color: #3b5998;
+}
+
+.ion-social-twitter:hover {
+    color: #00aced;
+}
+
+.ion-social-googleplus:hover {
+    color: #dd4b39;
+}
+
+.ion-social-instagram:hover {
+    color: #517fa4;
+}
+
+.ion-social-linkedin:hover{
+    color: #2867B2;
+}
+
+@keyframes moveSOCIALfacebook{
+    0% {
+        opacity: 0;
+        transform:translate(20px);
+    }
+    
+    80%{
+         transform:translate(-10px);
+    }
+    
+    98%{
+         transform:translateX(-10px);
+        color: #3b5998;
+    }
+    
+    100% {
+        opacity: 1;
+    transform:translate(0);
+         position: absolute;
+    top: 8%;
+    left: 98%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    }
+    
+}
+.ion-social-facebook
+{
+    animation: facebook .10s ease-out 10s;
+    animation-fill-mode: backwards;
+    animation-duration: 8s;
+    animation-delay: 12s;
+    animation-iteration-count: 1;
+}
+
+.ion-social-facebook
+{
+   
+    
+    position: absolute;
+    top: 8%;
+    left: 98%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    
+    
+}
+
+
+@keyframes moveSOCIALtwitter{
+    0% {
+        opacity: 0;
+        transform:translateX(20px);
+    }
+    
+    80%{
+         transform:translateX(-10px);
+        
+    }
+    
+    98%{
+         transform:translateX(-10px);
+        color: #00aced;
+    }
+    
+    100% {
+        opacity: 1;
+    transform:translateX(0);
+        position: absolute;
+    top: 15%;
+    left: 98%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    }
+    
+}
+.ion-social-facebook
+{
+    animation: moveSOCIALfacebook .10s ease-out 10s;
+    animation-fill-mode: backwards;
+    animation-duration: 8s;
+    animation-delay: 12s;
+    animation-iteration-count: 1;
+}
+
+.ion-social-twitter
+{
+    position: absolute;
+    top: 15%;
+    left: 98%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    
+     animation: moveSOCIALtwitter .10s ease-out 10s;
+    animation-fill-mode: backwards;
+    animation-duration: 8s;
+    animation-delay: 12s;
+    animation-iteration-count: 1;
+    
+    
+    
+}
+
+@keyframes movegoogleplus{
+    0% {
+        opacity: 0;
+        transform:translate(20px);
+    }
+    
+    80%{
+         transform:translate(-10px);
+    }
+    
+    98%{
+         transform:translateX(-10px);
+         color: #dd4b39;
+    }
+    
+    
+    100% {
+        opacity: 1;
+    position: absolute;
+    top: 22%;
+    left: 98%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+        
+      
+    }
+    
+}
+
+
+.ion-social-googleplus
+{
+    position: absolute;
+    top: 22%;
+    left: 98%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    
+      animation: movegoogleplus .10s ease-out 10s;
+    animation-fill-mode: backwards;
+    animation-duration: 8s;
+    animation-delay: 12s;
+    animation-iteration-count: 1;
+}
+
+
+
+@keyframes moveinstagram{
+    0% {
+        opacity: 0;
+        transform:translate(20px);
+    }
+    
+    80%{
+         transform:translate(-10px);
+    }
+    
+    98%{
+         transform:translateX(-10px);
+         color: #517fa4;
+    }
+    
+    
+    100% {
+        opacity: 1;
+    position: absolute;
+    top: 29%;
+    left: 98%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+        
+      
+    }
+    
+}
+
+.ion-social-instagram
+{
+    position: absolute;
+    top: 29%;
+    left: 98%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    
+    
+    
+    animation: moveinstagram .10s ease-out 10s;
+    animation-fill-mode: backwards;
+    animation-duration: 8s;
+    animation-delay: 12s;
+    animation-iteration-count: 1;
+}
+
+
+@keyframes movelinkedin{
+    0% {
+        opacity: 0;
+        
+        transform:translate(20px);
+    }
+    
+    80%{
+         transform:translate(-10px);
+    }
+    
+    98%{
+         transform:translateX(-10px);
+         color: #2867B2;
+    }
+    
+    
+    100% {
+         position: absolute;
+    top: 36%;
+    left: 98%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+        
+      
+    }
+    
+}
+
+
+@keyframes moveFromDown{
+   0% {
+        opacity: 0;
+        transform:translateY(60px);
+    }
+    
+   
+    
+    100% {
+        opacity: 1;
+    transform:translate(0);
+    }
+    
+}
+
+
+
+.eyes
+{
+     position: absolute;
+  
+    transform: translate(-50%,-50%);
+    text-align: center;
+   border-radius: 50%;
+    opacity: .02;
+   
+}

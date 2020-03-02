@@ -9,6 +9,7 @@ namespace BlogPlatform.Models
     {
         public int Id { get; set; }
         public string Name { get; set; }
-        public virtual ICollection<Post> PostTag { get; set; }
+        //public virtual ICollection<Post> Post { get; set; }
+        public virtual ICollection<PostTag> PostTag { get; set; }
     }
 }
